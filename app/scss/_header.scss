@@ -1,38 +1,67 @@
 .header {
     nav {
-        padding: 20px;
-        display: flex;
+        padding: 0.4rem 1.5rem;
     }
     &_logo {
         display: flex;
-        align-items: center;   
+        align-items: center;
+
+        h1 {
+            margin-left: 0.5em;
+            margin-top: 0em;
+            margin-bottom: 0em;
+            font-weight: bolder;
+
+        }   
     }
 
     &_links {
         a {
+            position: relative;
+            transition: color 150ms ease-in-out;
             font-size: $pequena;
+            &:not(:last-child){
+                margin-right: 32px;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                display: block;
+                height: 3px;
+                left: 0;
+                right: 0;
+                bottom: -20px;
+                background: $red;
+                opacity: 0;
+                transition: opacity 150ms ease-in-out;
+            }
+            &:hover {
+                color: $red;
+                &::before{
+                    opacity: 1;
+                }
+            }
         }
     }
-    #input_container {
+
+    &_input {
         position:relative;
         margin:0 20px;
-        background:#ddd;
+        background:$white;
         direction: ltr;
         width: 200px;
+        input {
+            height:28px;
+            margin:0;
+            padding-right: 30px;
+            width: 100%;
+        }
+        img {
+            position:absolute;
+            bottom:2px;
+            right:5px;
+            width:24px;
+            height:24px;
+        }
     }
-    #input {
-        height:28px;
-        margin:0;
-        padding-right: 30px;
-        width: 100%;
-    }
-    #input_img {
-        position:absolute;
-        bottom:2px;
-        right:5px;
-        width:24px;
-        height:24px;
-    }
-
-
 }

@@ -21,6 +21,7 @@ body {
 a, a:visited, a:hover {
   text-decoration: none;
   color: #202022;
+  font-weight: 500;
 }
 
 .flex {
@@ -48,10 +49,7 @@ a, a:visited, a:hover {
 }
 
 .header nav {
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 0.4rem 1.5rem;
 }
 
 .header_logo {
@@ -63,26 +61,62 @@ a, a:visited, a:hover {
           align-items: center;
 }
 
+.header_logo h1 {
+  margin-left: 0.5em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  font-weight: bolder;
+}
+
 .header_links a {
+  position: relative;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
   font-size: 1rem;
 }
 
-.header #input_container {
+.header_links a:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header_links a::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  background: #eb0042;
+  opacity: 0;
+  -webkit-transition: opacity 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out;
+}
+
+.header_links a:hover {
+  color: #eb0042;
+}
+
+.header_links a:hover::before {
+  opacity: 1;
+}
+
+.header_input {
   position: relative;
   margin: 0 20px;
-  background: #ddd;
+  background: white;
   direction: ltr;
   width: 200px;
 }
 
-.header #input {
+.header_input input {
   height: 28px;
   margin: 0;
   padding-right: 30px;
   width: 100%;
 }
 
-.header #input_img {
+.header_input img {
   position: absolute;
   bottom: 2px;
   right: 5px;
