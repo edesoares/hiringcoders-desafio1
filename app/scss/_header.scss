@@ -1,0 +1,38 @@
+.header {
+    nav {
+        padding: 20px;
+        display: flex;
+    }
+    &_logo {
+        display: flex;
+        align-items: center;   
+    }
+
+    &_links {
+        a {
+            font-size: $pequena;
+        }
+    }
+    #input_container {
+        position:relative;
+        margin:0 20px;
+        background:#ddd;
+        direction: ltr;
+        width: 200px;
+    }
+    #input {
+        height:28px;
+        margin:0;
+        padding-right: 30px;
+        width: 100%;
+    }
+    #input_img {
+        position:absolute;
+        bottom:2px;
+        right:5px;
+        width:24px;
+        height:24px;
+    }
+
+
+}

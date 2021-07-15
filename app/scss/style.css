@@ -1,0 +1,92 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+  color: #202022;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_links a {
+  font-size: 1rem;
+}
+
+.header #input_container {
+  position: relative;
+  margin: 0 20px;
+  background: #ddd;
+  direction: ltr;
+  width: 200px;
+}
+
+.header #input {
+  height: 28px;
+  margin: 0;
+  padding-right: 30px;
+  width: 100%;
+}
+
+.header #input_img {
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+}
+/*# sourceMappingURL=style.css.map */
