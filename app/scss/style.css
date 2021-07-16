@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Libre Franklin', sans-serif;
@@ -48,8 +49,23 @@ a, a:visited, a:hover {
           align-items: center;
 }
 
+.flex-jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-jc-sa {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header {
+  background-color: #d1d1d6;
+}
+
 .header nav {
-  padding: 0.3rem 1.5rem;
+  padding: 0.4rem 1.5rem;
 }
 
 .header_logo {
@@ -95,6 +111,7 @@ a, a:visited, a:hover {
 
 .header_links a:hover {
   color: #eb0042;
+  text-shadow: 0px 100px 80px rgba(0, 0, 0, 0.28), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.201279), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.16691), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.14), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.11309), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0787208);
 }
 
 .header_links a:hover::before {
@@ -124,46 +141,96 @@ a, a:visited, a:hover {
   height: 24px;
 }
 
-.main {
+.promo {
+  background-color: #202022;
+}
+
+.promo_img {
+  background-image: url(/assets/ufo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 750px;
+  width: 800px;
+  text-align: center;
+  text-shadow: 0px 100px 80px rgba(0, 0, 0, 0.28), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.201279), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.16691), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.14), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.11309), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0787208);
+  padding-top: 400px;
+}
+
+.promo_img h1 {
+  font-size: 100px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.promo_img h2 {
+  font-size: 80px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.promo_img h3 {
+  margin-top: 5px;
+}
+
+.promo_img #vremei {
+  color: #eb0042;
+}
+
+.produtos {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+}
+
+.timer {
+  background-color: #eb0042;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.main_container {
-  position: absolute;
-  width: 100%;
-  height: 900px;
-  background-image: url(/assets/ufo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.main_text {
-  position: relative;
-  height: 100px;
+.timer h2 {
+  margin-left: 50px;
   color: #202022;
-  text-align: center;
-  padding-top: 30.00rem;
-  margin: -10px;
+  font-size: em(36);
 }
 
-.main_text h1 {
-  font-size: 100px;
-  margin: -10px;
+.timer__row {
+  margin-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.28), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.201279), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.16691), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.14), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.11309), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0787208);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.28), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.201279), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.16691), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.14), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.11309), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0787208);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.main_text h2 {
-  font-size: 80px;
-  margin: -10px;
+.timer__row-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40%;
+  background-color: #202022;
 }
 
-.main_text h3 {
+.timer__row-item h3 {
   margin: 10px;
+  text-align: center;
+  color: white;
+  font-size: em(36);
 }
 
-.main_text #vremei {
-  color: #eb0042;
+.timer__row-item p {
+  margin: 10px;
+  color: white;
+  font-size: em(24);
+  font-weight: 400;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
