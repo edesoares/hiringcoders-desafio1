@@ -12,7 +12,6 @@
             margin-top: 0em;
             margin-bottom: 0em;
             font-weight: bolder;
-
         }   
     }
 
@@ -20,7 +19,8 @@
         a {
             position: relative;
             transition: color 150ms ease-in-out;
-            font-size: $pequena;
+            font-size: 15pt;
+            font-weight: 700;
             &:not(:last-child){
                 margin-right: 32px;
             }
@@ -53,15 +53,16 @@
         direction: ltr;
         width: 200px;
         input {
-            height:28px;
+            height:27px;
             margin:0;
             padding-right: 30px;
             width: 100%;
         }
         img {
             position:absolute;
+            top: 2px;
             bottom:2px;
-            right:5px;
+            right:2px;
             width:24px;
             height:24px;
         }
