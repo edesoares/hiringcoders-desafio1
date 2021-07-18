@@ -11,54 +11,51 @@
 </head>
 <body>
     <header class="header">
-        <nav class="flex flex-jc-sb flex-ai-c">
+        <nav class="flex flex-jc-sb flex-ai-c flex-w">
             <div>
-                <a href="/" class="header_logo">
+                <a href="/" class="header-logo flex flex-ai-c">
                     <img src="https://img.icons8.com/windows/50/000000/sci-fi.png" alt="Ovnis na Web"/> 
                     <h1 id="title">Ovnis na Web</h1>
                 </a> 
             </div>
-            <div class="header_links">
+            <div class="header-links flex flex-w">
                 <a href="#">Início</a><a href="#">Ofertas</a><a href="#">Contato</a>
             </div>	
-            <div class="header_input">
+            <div class="header-input flex flex-jc-sa">
                 <input type="text" placeholder="Pesquisar ovnis">
-                <a href="#">
-                    <img src="https://img.icons8.com/ios/50/000000/google-web-search.png"/>
-                </a>
+                <img src="https://img.icons8.com/ios/50/000000/google-web-search.png"/>
             </div>	
         </nav>
     </header>
-    <section class="promo flex flex-jc-c">
-        <div class="promo_img">
+    <section class="promo flex flex-jc-c bg-gray">
+        <div class="promo-img">
             <h1>BLACK</h1><h2>FRIDAY</h2>
             <h2 id="vremei">70% OFF</h2>
             <h3>OVNIS COM PREÇOS IMPERDÍVEIS</h3>
         </div>
-
     </section>
-    <section class="timer flex flex-jc-sb" data-anime="scroll">
-        <div class="timer__txt">Corra enquanto há tempo!</div>
-        <div class="timer__row">
-            <div class="timer__row-item" data-anime="scroll">
-                <h3 class="days">03</h3>
-                <h3 class="timer__row-item-txt">Dias</h3>
+    <section class="timerbar flex flex-jc-sa flex-w bg-red">
+        <div class="timerbar-txt">Corra enquanto há tempo!</div>
+        <div class="timerbar-linha flex flex-jc-c">
+            <div class="timerbar-linha-item">
+                <h3 class="dias">03</h3>
+                <h3 class="diasTxt">Dias</h3>
             </div>
-            <div class="timer__row-item" data-anime="scroll">
+            <div class="timerbar-linha-item">
                 <h3 class="hrs">10</h3>
-                <h3 class="timer__row-item-txt">Horas</h3>
+                <h3 class="hrsTxt">Horas</h3>
             </div>
-            <div class="timer__row-item" data-anime="scroll">
+            <div class="timerbar-linha-item">
                 <h3 class="min">15</h3>
-                <h3 class="timer__row-item-txt">Minutos</h3>
+                <h3 class="minTxt">Minutos</h3>
             </div>
         </div>
-
-    </section>    
-    <section class="conteudo">
+    </section>
+  
+    <section class="conteudo bg-gray">
         <div class="titulo">Nossas ofertas são de outro mundo!</div> 
         <div class="produtos">
-            <div class="produtos-container">          
+            <div class="produtos-container flex flex-w flex-jc-c">          
                 <div class="produto-item">
                     <div class="produto-item-img">
                         <img src="assets/products/sputnik.png">
@@ -183,38 +180,56 @@
             </div>
         </div>
     </section>
-    <section class="form">
-        <div class="form-title">Quer ficar por dentro das melhores ofertas?</div>
-        <div class="form-input">
-            <form class="flex flex-jc-c flex-w">
-                <input class="form-input-element" type="text" name="nome" id="nome" placeholder="Nome"/>
-                <input class="form-input-element" type="text" name="email" id="email" placeholder="E-mail"/>
-                <input class="form-input-element form-submit" type="submit" name="enviar" id="enviar" value="Enviar"/>
-            </form>
+
+    <section class="form flex flex-jc-c flex-w bg-red">
+        <div class="form-content">
+            <div class="form-title">Quer ficar por dentro das melhores ofertas?</div>
+            <div class="form-input">
+                <form class="flex flex-jc-c flex-w">
+                    <input class="form-input-element name" type="text" name="nome" id="nome" placeholder="Nome"/>
+                    <input class="form-input-element email" type="text" name="email" id="email" placeholder="E-mail"/>
+                    <input class="form-input-element form-submit bg-black" type="submit" name="enviar" id="enviar" value="Enviar"/>
+                </form>
+            </div>
         </div>
     </section>
+
     <footer class="footer">
-        <div class="footer-logo">
-            <a href="#" class="logo">
-                Insira um logo aqui
-            </a>
+        <div class="footer-items bg-red flex flex-jc-se flex-w">
+            <div>
+                <div class="title">
+                    <h4>Quem somos</h4>
+                </div>
+                <div class="content flex flex-jc-c">
+                    <p>
+                    Somos o maior site da galáxia para venda e troca de usados. 
+                    Trabalhamos com drones, naves, satélites, estações espaciais,
+                     ovnis em geral. Entregamos em todo o universo observável.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="title">
+                    <h4>Nossas Redes</h4>
+                </div>
+                <div class="content flex flex-jc-c">
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/github.png"/>
+                    </a>
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/facebook--v1.png"/>
+                    </a>
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/instagram--v1.png"/>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="footer-description">
-            Entregamos em todo o universo observável
-        </div>
-        <div class="footer-socialmedia">
-            <a href="#">
-                <img src="https://img.icons8.com/ios-filled/50/000000/github.png"/>
-            </a>
-            <a>
-                <img src="https://img.icons8.com/ios-filled/50/000000/facebook--v1.png"/>
-            </a>
-            <a>
-                <img src="https://img.icons8.com/ios-filled/50/000000/instagram--v1.png"/>
-            </a>
-        </div>
-        <p>Orion Spacecraft Corporation Ltd. Betelgeuse VII, Betelgeuse Star System, Orion Constellation</p>
+        <h5 class="bg-white">Orion Spacecraft Corporation Ltd. Betelgeuse VII, Betelgeuse Star System, Orion Constellation </h5>
     </footer>
-    <script src="/app/js/script.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/plugin/duration.min.js" integrity="sha512-OhxGK8KMaWOTc5f5g6vHl53tHTyl5YWqkjj3zadaMo6RVRrXQNg81RSpQWDDyapCH2fCYhf8ECGgXEqKWsnamQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app/js/forms.js"></script>
+    <script src="app/js/contador.js"></script>
 </body>
 </html>

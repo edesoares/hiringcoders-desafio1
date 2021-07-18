@@ -1,26 +1,25 @@
 .form{
-    background-color: $red;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     position: relative;
+    &-content{
+       max-width: 1000px;
+    }
     &-title{
-        font-size: 30pt;
-        font-weight: 700;
+        font-size: $titulo;
+        font-weight: $bold;
+        text-align: center;
         padding: 30px
     }
     &-submit{
         &:hover{
             cursor: pointer;
         }
-        background-color: $gray;
         color: $white;
-        font-weight: 600;
+        font-weight: $bold;
     }
     &-input{
-        
         padding-bottom: 30px;
         &-element{
+            box-shadow: $sombra;
             height: 45px;
             width: 300px;
             text-indent: 20px;

@@ -4,9 +4,18 @@ $gray: hsl(240, 3%, 13%);
 $red: hsl(343, 100%, 46%);
 $white: hsl(0, 0%, 100%);
 $dirtyWhite: hsl(216, 26%, 96%);
-$bluishWhite: hsl(240, 6%, 83%);
 
 // Fontes
-
-$pequena: 1.000rem;
+$titulo: 25pt;
+$tituloGde: 35pt;
+$pequena: 14px;
 $media: 1.125rem;
+$preco: 20px;
+
+//Fonte - weight
+$light: 400;
+$bold: 700;
+$maisbolder: 1000;
+
+// Sombra
+$sombra: 0px 100px 80px rgba(0, 0, 0, 0.28), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.201279), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.16691), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.14), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.11309), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0787208);
