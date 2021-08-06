@@ -9,9 +9,6 @@ Munido dessas instruções muito claras e específicas eu construi uma página u
 
 Claro que a minha página tem alguns problemas, até por que é a primeira vez que eu mexo com scss e js e eu não dispus de muito tempo. Vou deixar aqui alguns pontos que eu identifiquei mas o leitor que enxergar outros problemas pode entrar em contato que eu ficaria muito grato.
 
-A página está hospedada [aqui](https://edesoares.github.io/hiringcoders-desafio1/).
-
-
 ### Problemas:
 
 1. O navegador está acusando um overflow na tag body mas eu não consegui identicar qual elemento está causando esse problema.
